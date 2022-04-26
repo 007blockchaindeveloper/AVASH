@@ -199,18 +199,6 @@ var AVAXWalletGetBalanceCmd = &cobra.Command{
 	},
 }
 
-/*
-avaxwallet
-	create [wallet name] -> "wallet created: " + [wallet name]
-	addkey [wallet name] [private key] -> address
-	balance [node name] [address] -> uint
-	status [node name] [tx string] -> [status]
-	maketx [wallet name] [destination address] [amount] -> txString
-	refresh [node name] [wallet name] -> "wallet refreshed: " + [wallet name]
-	remove [wallet name] [tx string] -> "transaction removed: " + [tx string]
-	send [node name] [tx string] -> "sent tx: " [tx string]
-	newkey -> privateKey
-*/
 
 func init() {
 	AVAXWalletCmd.AddCommand(AVAXWalletNewKeyCmd)
